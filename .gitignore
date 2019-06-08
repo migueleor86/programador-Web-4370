@@ -1,6 +1,6 @@
 /Clase 00
 
-# Common files
+# Common files comment
 
 .DS_Store
 /**/.DS_Store
@@ -8,9 +8,8 @@
 /**/node_modules
 **/**/node_modules
 
-/Clase 01/Profe
-/Clase 02/Profe
-/Clase 03
+/Clase 01/Profe/Desafío
+/Clase 03/Profe
 /Clase 04
 /Clase 05
 /Clase 06
