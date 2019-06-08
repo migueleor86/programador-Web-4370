@@ -1,0 +1,20 @@
+Basic Commands
+
+git init (indicar a git que vincularas un proyecto, nuevo o no)
+git add <file> // para pasar el proyecto del workin directory al staging area (crea una carpeta git oculta)
+git status // para ver si los archivos estan en workin directory, staging area, etc
+git commit -m "mensaje" // para pasar el proyecto del staging area al repository ("primera foto del codigo")
+git remote add origin https://github.com/migueleor86/programador-Web-4370.git
+
+git push -u origin master (si ya el repositorio esta creado entonces contraseña: picanto2007@)
+git push // para subir el proyecto a un repositorio remoto, al servidor para que lo pedan ver
+git pull // para bajar los ulimos cambios que han hecho los desarrolladores o tú
+git clone // hace una copia desde el servidor a tu computador.
+git log // para ver todos los commit que hemos creado
+
+
+pwd // para ver en que directorio estamos
+ls // para listar directorios y archivos en el directorio estamos
+cd desktop // para pocisionarse en el escritorio 
+cd " nombre de la carperta" // para pocisionarse en la carpeta de destino 
+mejor seleccionar la carpeta con clic derecho y abrir el git bash por ahi
