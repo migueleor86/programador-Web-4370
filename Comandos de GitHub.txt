@@ -5,7 +5,6 @@ git add <file> // para pasar el proyecto del workin directory al staging area (c
 git status // para ver si los archivos estan en workin directory, staging area, etc
 git commit -m "mensaje" // para pasar el proyecto del staging area al repository ("primera foto del codigo")
 git remote add origin https://github.com/migueleor86/programador-Web-4370.git
-
 git push -u origin master (si ya el repositorio esta creado entonces contraseña: picanto2007@)
 git push // para subir el proyecto a un repositorio remoto, al servidor para que lo pedan ver
 git pull // para bajar los ulimos cambios que han hecho los desarrolladores o tú
