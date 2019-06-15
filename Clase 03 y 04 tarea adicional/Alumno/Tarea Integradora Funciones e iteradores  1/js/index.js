@@ -1,4 +1,30 @@
-var diaMayMin = prompt('Escribir día de la semana')
+function diaSemanaNumero(dia) {
+  var diaLower = dia.tolowerCase()
+
+  var diaSemanaNum = {
+    Lunes: 1,
+    artes: 2,
+    Miercoles: 3,
+    Jueves: 4,
+    Viernes: 5,
+    Sabado: 6,
+    Domingo: 7
+  }
+  var numeroDeDia = diaSemanaNum[diaLower]
+  console.log(diaSemanaNum.diaLower)
+}
+console.log(diaSemanaNum.lunes)
+if (numeroDeDia) {
+  return numeroDeDia
+} {
+  return 0
+}
+
+
+
+
+
+/* var diaMayMin = prompt('Escribir día de la semana')
 var dia = diaMayMin.toLowerCase()
 
 var daysOfTheWeek = [
@@ -21,7 +47,4 @@ function diaSemanaNumero(ArrayDay,DiaDeSemanaFuncion) {
     // }
  }
 }
-diaSemanaNumero(daysOfTheWeek,dia)
-
-
-
+diaSemanaNumero(daysOfTheWeek,dia) */

@@ -11,16 +11,16 @@ var daysOfTheWeek = [
   'Domingo'
 ]
 
-function diaNumeroSemana(ArrayDay,numeroFuncion) {
+function diaNumeroSemana(ArrayDay, numeroFuncion) {
   for (var i = 0; i <= ArrayDay.length; i++) {
-     if(i === numeroFuncion) {
-     return(ArrayDay[i-1])
-     }
- }
-   return ('Día indefinido')
+    if (i === numeroFuncion) {
+      return (ArrayDay[i - 1])
+    }
+  }
+  return ('Día indefinido')
 }
 
-console.log(diaNumeroSemana(daysOfTheWeek,numero))
+console.log(diaNumeroSemana(daysOfTheWeek, numero))
 
 
 
