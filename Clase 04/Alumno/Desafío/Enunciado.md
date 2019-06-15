@@ -30,7 +30,8 @@ var studentsList = [
     dni: 45678983
   }
 ]
-```
+
+for(var i = 0; i < stud )
 
 **Documentación:**
 

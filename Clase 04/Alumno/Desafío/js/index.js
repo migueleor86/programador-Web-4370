@@ -1,44 +1,53 @@
-var nombre = prompt('Ingrese nombre: ').toLowerCase()
+}
+
+function buscarAlumnoPorNombre(nombre, listaAlumnos) {
+  var nombreLower = nombre.toLowerCase();
+  for (var i = 0; i < listaAlumnos.length; i++) {
+    if (listaAlumnos[i].firstName.toLowerCase() === nombreLower) {
+      return i
+    }
+  }
+  return -1
+}
 
 function buscarAlumnoPorNombreYApellido(nombre, apellido, listaAlumnos) {
   var nombreLower = nombre.toLowerCase();
   var apellidoLower = apellido.toLowerCase();
-  for (var i = 0; i < listaAlumnos; i++) {
+  for (var i = 0; i < listaAlumnos.length; i++) {
     if (listaAlumnos[i].firstName.toLowerCase() === nombreLower &&
-      listaAlumnos[i].lastName.toLowerCase() === apellidoLower)
-      return i;
+      listaAlumnos[i].lastName.toLowerCase() === apellidoLower) {
+      return i
+    }
   }
-  return -1;
+  return -1
 }
 
-console.log(buscarAlumnoPorNombreYApellido(nombre,studentsList))
 
 var studentsList = [{
-  firstName: 'Juan',
-  lastName: 'Pérez',
-  dni: 45678987
-},
-{
-  firstName: 'Ana',
-  lastName: 'Fernandez',
-  dni: 45678989
-},
-{
-  firstName: 'Pedro',
-  lastName: 'Mármol',
-  dni: 45678956
-},
-{
-  firstName: 'Pablo',
-  lastName: 'Picapiedras',
-  dni: 45678983
-}
+    firstName: 'Juan',
+    lastName: 'Pérez',
+    dni: 45678987
+  },
+  {
+    firstName: 'Ana',
+    lastName: 'Fernandez',
+    dni: 45678989
+  },
+  {
+    firstName: 'Pedro',
+    lastName: 'Mármol',
+    dni: 45678956
+  },
+  {
+    firstName: 'Pablo',
+    lastName: 'Picapiedras',
+    dni: 45678983
+  }
 ]
+var nombre = prompt('Ingrese nombre: ')
+var apellido = prompt('Ingrese apellido: ')
+var posicion = buscarAlumnoPorNombreYApellido(nombre, apellido, studentsList);
+console.log(posicion)
 
-
-
-
-/*function buscarAlumnoPorNombre(nombre, listaAlumnos) {
-  for (var i = 0; i < listaAlumnos; i++) {
-    console.log(listaAlumnos[i].dni
-    }*/
+  >>>
+  >>> > 7 f43d56ea0537cbc489fb9d73aaa6c9d7b84e363
