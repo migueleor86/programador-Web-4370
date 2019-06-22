@@ -1,22 +1,31 @@
-var maxNumber[1, 2, 8, 3, 2, -11, 10, 1]
+var numerodia = prompt('Escribir numero del día de la semana')
+var numero = parseInt(numerodia)
 
-function maxNumber(numero) {
-  var max = Number.NEGATIVE_INFINITY;
-  for (var i = 0; i < numero.lenth; i++) {
-    if (max < numero[i]) {
-      max = numero[i]
+var daysOfTheWeek = [
+  'Lunes',
+  'Martes',
+  'Miercoles',
+  'Jueves',
+  'Viernes',
+  'Sabado',
+  'Domingo'
+]
+
+function diaNumeroSemana(ArrayDay, numeroFuncion) {
+  for (var i = 0; i <= ArrayDay.length; i++) {
+    if (i === numeroFuncion) {
+      return (ArrayDay[i - 1])
     }
   }
-  return max
+  return ('Día indefinido')
 }
 
-console.log(maxNumber(-1, -4, -83, -3, -2, -4, -10, -4))
+console.log(diaNumeroSemana(daysOfTheWeek, numero))
 
 
 
-/* ### Escribir una funcion llamada maxNumber() que reciba un array de números y devuelva el máximo
-Ejemplo.
+
+/* ### Escribir una funcion llamada diaNumeroSemana() que reciba un número y devuelva el nombre del día que le corresponde 
+
 ```
-maxNumber([1,2,8,3,2,-11,10,1]) // debe retornar 10
-maxNumber([-1,-4,-83,-3,-2,-4,-10,-4]) // debe retornar -1
-maxNumber([21]) // debe retornar 21 */
+diaNumeroSemana(1) // debe retornar el el string 'lunes'  */

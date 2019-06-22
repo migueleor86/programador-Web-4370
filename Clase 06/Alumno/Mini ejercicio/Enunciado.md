@@ -9,3 +9,4 @@ var text = 'El amor juega a inventarse, huye de sí mismo para volver en su espi
 **Documentación:**
 
 [String indexOf](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/String/indexOf)
+
