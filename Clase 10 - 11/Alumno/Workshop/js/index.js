@@ -8,17 +8,24 @@ window.onload = function () {
   var dni = document.getElementById('dni')
   var addStudentButton = document.getElementById('addStudentButton')
   var mainList = document.getElementById('mainList')
+  var deleteDni = document.getElementById('deleteDni')
+  var deleteStudentButton = document.getElementById('deleteStudentButton')
+
   // bind events validations
   firstName.onblur = validateNotEmpty
   lastName.onblur = validateNotEmpty
   email.onblur = validateEmail
   dni.onblur = validateDni
   addStudentButton.onclick = addStudent
+  deleteStudentButton.onclick = deleteStudent
+
   // initialize
   addStudentButton.disabled = true
   var dataStore = getDataStore(KEY_STORE)
   renderStudentsList(mainList, dataStore)
+
   // render functions
+
   function renderStudentsList(list, students) {
     for (var i = 0; i < students.length; i++) {
       console.log(students[i])
@@ -28,6 +35,7 @@ window.onload = function () {
 
   function createStudentNode(student) {
     var li = document.createElement('li')
+    li.id = student.dni
     li.className = 'list-group-item'
     var h1 = document.createElement('h1')
     h1.innerHTML = student.firstName + ' ' + student.lastName
@@ -50,6 +58,7 @@ window.onload = function () {
     }
     return []
   }
+
   // data manipulation
   function addStudent() {
     var student = getStudentFromForm()
@@ -60,6 +69,27 @@ window.onload = function () {
     mainList.appendChild(createStudentNode(student))
     addStudentButton.disabled = true
   }
+
+  function deleteStudent() {
+    // tomar el valor del input dniDelete
+    // buscar ese valor en el dataStore
+    //removeStudentFromDatastore(dataStore, dniDelete.value)
+    // si ese valor existe borrarlo del array
+    // persistir dataStore en localStore 
+    // remover el student del dom 
+  }
+
+  function removeStudentFromDatastore(dataStore, dni) {
+    for (var i = 0; i < dataStore.length; i++) {
+      var student = dataStore[i];
+      if (student.dni === dni) {
+        dataStore.splice(i, 1);
+        return
+      }
+    }
+  }
+
+
 
   function clearStudentForm() {
     firstName.value = ''
@@ -76,7 +106,9 @@ window.onload = function () {
       email: email.value,
     }
   }
+
   // localStorage functions
+
   function setLocalList(key, array) {
     var valorKey = typeof key === 'string'
     var valorArray = Array.isArray(array)
@@ -104,6 +136,8 @@ window.onload = function () {
     }
     return false
   }
+
+
   // validations
   function allValidationsOk() {
     var allValids = document.getElementsByClassName('is-valid')
@@ -168,4 +202,5 @@ window.onload = function () {
     }
     return false
   }
+
 }
