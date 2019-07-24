@@ -30,7 +30,7 @@ switch (generoMinusculas) {
 var mensaje
 
 // Depende la edad asignará el mensaje
-if (edad >== 18) {
+if (edad >= 18) {
   mensaje = 'usted es mayor de edad puede ingresar'
 } else {
   mensaje = 'usted es menor de edad y no puede ingresar';
