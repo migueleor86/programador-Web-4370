@@ -9,7 +9,7 @@ var studentNode = createStudentNode(newStudent)
 Resultado ejemplo:
 
 ```html
-<<!-- li class="list-group-item" id="22999333">
+<li class="list-group-item" id="22999333">
   <h1>
     Juan Peréz
   </h1>
@@ -18,7 +18,7 @@ Resultado ejemplo:
   </h3><p>
     E-mail: juan@gmail.com
   </p>
-</li> -->
+</li>
 ```
 
 **Datos de prueba:**

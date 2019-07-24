@@ -1,6 +1,6 @@
 var genero = prompt('Ingrese su genero: ');
-var edad = prompt('Ingrese su edad: ');
-edad = parseInt(edad);
+var edadString = prompt('Ingrese su edad: ');
+var edad = parseInt(edadString);
 var prefijo
 
 switch (genero) {
@@ -14,12 +14,12 @@ switch (genero) {
     prefijo = 'Sx.'
     break;
 }
-var mensaje
+var mensaje;
 
-if (edad >== 18) {
+if (edad >= 18) {
   mensaje = 'usted es mayor de edad puede ingresar'
 } else {
-  mensaje = 'usted es menor de edad y no puede ingresar';
+  mensaje = 'usted es menor de edad y no puede ingresar'
 }
 
 console.log(prefijo + ' ' + mensaje);
