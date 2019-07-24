@@ -2,7 +2,7 @@
 var operation = prompt('Ingrese la operación a realizar, sum, res, mul o div')
 
 // Pido el primer número
-var number1 = prompt('Ingerese el primer número')
+var number1 = prompt('Ingrese el primer número')
 var parsedNumber1 = parseFloat(number1, 10)
 
 // Pido el segundo número al menos una vez, si la operación es división
@@ -11,7 +11,7 @@ var number2
 var parsedNumber2
 
 do {
-  number2 = prompt('Ingerese el segundo número')
+  number2 = prompt('Ingrese el segundo número distinto de 0')
   parsedNumber2 = parseFloat(number2, 10)
 } while (operation === 'div' && parsedNumber2 === 0)
 
