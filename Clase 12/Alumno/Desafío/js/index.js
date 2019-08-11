@@ -1,10 +1,10 @@
 $(document).ready(function () {
 
   var email = $('#email')
-  email.blur(handleClick)
+  email.blur(validateEmail)
 });
 
-function handleClick(event) {
+function validateEmail(event) {
   var inputNode = $(event.target)
   var value = inputNode.val()
   var containsAtLeastOneAt = value.indexOf('@') > -1
