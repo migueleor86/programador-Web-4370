@@ -1,22 +1,16 @@
-var operacionEnt = prompt('Ingrese operacion')
+var operacionEnt = prompt('Ingrese operacion: suma o division')
 var operacion = operacionEnt.toLowerCase()
-var op1
+var op1 = parseInt(prompt('ingrese opción 1'))
 var op2
+
+do {
+  var op2 = parseInt(prompt('ingrese opción 2'))
+} while (operacion === 'division' && op2 === 0);
 
 switch (operacion) {
   case 'suma':
-    op1 = parseInt(prompt('ingrese opción 1'))
-    op2 = parseInt(prompt('ingrese opción 2'))
-    console.log(op1 + op2)
+     console.log(`Resultado de la suma: ${op1 + op2}`)
     break;
   case 'division':
-    op1 = parseInt(prompt('ingrese opción 1'))
-    op2 = parseInt(prompt('ingrese opción 2'))
-    if (op2 !== 0) {
-      console.log(op1 / op2)
-    } else
-      while (op2 === 0) {
-        op2 = parseInt(prompt('ingrese opción 2, diferente de 0'));
-        console.log(op1 / op2);
+     console.log(`Resultado de la división:' ${op1 / op2}`)
       }
-}
