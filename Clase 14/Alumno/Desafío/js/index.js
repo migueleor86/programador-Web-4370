@@ -1,17 +1,16 @@
 //esperar document ready
 $(document).ready(function () {
-  $('.btn-danger').click(removeElementWithAnimation)
+  $('button').click(removeElementWithAnimation)
 
   function removeElementWithAnimation(event) {
-    var button = $(event.target)
+    console.log(event)
+    var button = $(event.currentTarget) //currentTarget: es el elemento al que está conectado el detector de eventos. por si el usuario clikea en la fuente y no e boton como tal
     var tr = button.parent().parent()
-    tr.fadeOut(3000, function () {
+    tr.fadeOut(1000, function () {
       tr.remove()
     })
   }
 });
-
-
 
 
 //asociar a todos los botones de borrar la funcion de handle del evento que va 
