@@ -1,0 +1,31 @@
+local store : key  / data    // se mantiene en la data del navegador 
+
+
+-local storege (disco) "String" formato json
+-dataStore (memoria) ojeto ( ya parseado) 
+-DOM /html  lo que ve el usurio
+
+json
+json.parser( )
+
+Clase 7
+
+Boostrap, analizar el html del workshop (desafio 1)
+tips de vsc
+
+* cltrl clic en la funcion o variable
+
+eventos
+.target ?? de eventos
+
+Jquery
+
+API
+
+package.json
+webpack  (webpack.confirg.js)
+npm
+npm start
+
+
+tarea hacer la validacion del formularion en el contactcontroller

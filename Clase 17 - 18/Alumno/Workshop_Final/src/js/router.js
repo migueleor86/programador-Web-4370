@@ -1,6 +1,6 @@
 import crossroads from 'crossroads'
 import homeController from './controllers/homeController'
-import contactController from './controllers/contactController'
+import {contactController, validateEmail} from './controllers/contactController'
 import peopleController from './controllers/peopleController'
 import savedController from './controllers/savedController'
 import { searchController } from './controllers/searchController'
